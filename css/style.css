@@ -1,0 +1,325 @@
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f1f1f1;
+	font-size: 100%;
+	font-family: "Open sans", sans-serif;
+}
+
+header > ul {
+	color: white;
+	font-size: 14px;
+	list-style: none;
+	float: right;
+	margin-top: 8px;
+}
+
+header li {
+	display: inline;
+	margin: 0 8px;
+}
+
+.header-option {
+	height: 150px;
+	width: 100%;
+	background-color: #272C31;
+}
+
+.header-option-logo {
+	color: white;
+	padding-top: 30px;
+}
+
+.header-option-logo > input {
+	float: right;
+	width: 30%;
+	height: 30px;
+	margin-top: 30px;
+	border-radius: 4px;
+	border: 1px solid #d0d0d0;
+	background: #272C31;
+}
+
+.header-option-links {
+	padding-bottom: 10px;
+	padding-top: 0px;
+}
+
+
+.header-option a {
+	text-transform: capitalize;
+	color: #eee;
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 13px;
+    font-weight: 600;
+}
+
+.header-option a:hover {
+	color: #0073aa;
+}
+
+.header-option-links input {
+	float: right;
+	height: 30px;
+	border-radius: 3px;
+	border: none;
+	background-color: #00a0d2;
+	color: #fff;
+}
+
+.directory {
+	background-color: #0070A9;
+	width: 100%;
+	height: 60px;
+}
+
+.directory h2 {
+	color: white;
+	font-weight: 100;
+	font-size: 1.5625rem;
+	line-height: 60px;
+	cursor: pointer;
+}
+
+.commercial {
+	background-color: #dfdfdf;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	line-height: 40px;
+}
+
+.commercial a {
+	color: #636363;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+	margin-right: 20px;
+}
+
+.commercial a:hover {
+	color: #d54e21;
+}
+
+.option {
+	background: #fff;
+	height: 60px;
+}
+
+.option-filter {
+	width: 70%;
+}
+
+.option-filter > input {
+	float: right;
+	width: 40%;
+	height: 40px;
+	margin-top: 10px;
+	margin-right: 10px;	
+}
+
+.option-links {
+	width: 25%;
+}
+
+.option-links a,
+.option-filter a {
+	text-decoration: none;
+	color: #555;
+    font-size: 13px;
+    margin: 0 10px;
+    padding: 15px 0;
+}
+
+.option-links a:hover,
+.option-filter a:hover {
+	color: #2ea2cc;
+}
+
+.option > span {
+	width: 5%;
+	text-align: center;
+}
+
+.option > span,
+.option-filter,
+.option-links {
+	float: left;
+	line-height: 60px;
+}
+
+.content {
+	height: 100%;
+}
+
+.footer ul {
+	width: 160px;
+	float: left;
+}
+
+.footer ul > li {
+	list-style: none;
+	color: #0073aa;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 5px;
+}
+
+.footer ul > li:hover {
+	text-decoration: underline;
+}
+
+
+.content,
+.header-option div,
+.directory h2,
+.commercial div,
+.option,
+.footer {
+	width: 960px;
+	margin: auto;
+}
+
+ul li {
+	cursor: pointer;
+}
+
+aside {
+	width: 290px;
+	height: 262px;
+	float: left;
+	margin: 15px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+aside:hover {
+	-webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+}
+
+aside img {
+	width: 100%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+aside p {
+	padding-left: 20px;
+}
+
+footer {
+	clear: both;
+	height: 250px;
+	width: 100%;
+	margin-top: 20px;
+	border-top: 1px solid #ddd;
+	background-color: #f7f7f7;
+}
+
+header {
+	height: 30px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: #272C31;
+}
+
+/* Medium to Large screen */
+@media only screen and (max-width: 960px) {
+	.header-option div {
+		width: 600px;
+	}
+
+	.content,
+	.header-option div,
+	.directory h2,
+	.commercial div,
+	.option,
+	.footer {
+		width: 600px;
+		margin: auto;
+	}
+
+	aside {
+		width: 270px;
+		height: 262px;
+		float: left;
+		margin: 10px;
+	}
+
+	.option-links {
+		width: 90%;
+	}
+
+	.header-option-links input,
+	.header-option-links a:nth-child(odd),
+	.option-filter {
+		display: none;
+	}
+}
+
+/* Small to Medium screens */
+@media only screen and (max-width: 600px) {
+	.content,
+	.header-option div,
+	.directory h2,
+	.commercial div,
+	.option,
+	.footer {
+		width: 300px;
+		margin: auto;
+	}
+
+	.commercial,
+	.header-option-links a,
+	.option span {
+		display: none;
+	}
+
+	.header-option-logo > input {
+		float: right;
+		width: 100%;
+		height: 30px;
+		margin: 0 auto;
+	}
+
+	.option {
+		margin: 15px auto;
+	}
+
+	.option-links {
+		width: 100%;
+		text-align: center;
+	}
+
+	.directory h2 {
+		text-align: center;
+	}
+
+	.footer ul {
+		width: 150px;
+	}
+
+	footer {
+		height: 400px;
+		width: 100%;
+	}
+
+	header img {
+		display: none;
+	}
+}
